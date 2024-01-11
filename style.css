@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: url('./images/background.jpg');
+    
+}
+
+/* Section Header*/
+h1{
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    font-weight: 800;
+    font-size: 4rem;
+    color: rgb(0, 0, 0);
+}
+
+.show{
+    margin-top: 100px;
+    opacity: 0;
+    transition:  opacity 2s ease-in-out;
+}
+
+.show.fadeIn{
+    opacity: 1;
+}
+
+.image{
+    height: 180px;
+    border-radius: 50%;
+    
+}
+
+/* Section Background*/
+
+.title{
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 100px;
+
+    border-right: 1px solid rgb(148, 148, 148);
+    border-bottom: 1px solid rgb(124, 124, 124);
+    border-top: 1px solid rgb(255, 255, 255);
+    border-left: 1px solid rgb(255, 255, 255);
+
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+.info{
+    margin-top: 4px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 380px;
+
+    
+    border-right: 1px solid rgb(148, 148, 148);
+    border-bottom: 1px solid rgb(124, 124, 124);
+    border-top: 1px solid rgb(255, 255, 255);
+    border-left: 1px solid rgb(255, 255, 255);
+
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+
+    margin-bottom: 20px;
+
+   
+}
+
+.body{ 
+    opacity: 0;
+    transform: translateY(300px);
+    transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+    transition-delay: 1s;
+}
+
+.body.slideUp{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.info-border{
+    border-right: 1px solid black;
+}
+
+h2{
+    font-size: 1.5em;
+    margin-top: 5px;
+    font-weight: lighter;
+    text-align: center;
+    padding: 5px;
+}
+
+h6{
+    margin-top: 5px;
+    font-weight: bold;
+}
+hr{
+    margin: 10px;
+}
+
+
+.skills{
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 100px;
+    
+
+    border-right: 1px solid rgb(148, 148, 148);
+    border-bottom: 1px solid rgb(124, 124, 124);
+    border-top: 1px solid rgb(255, 255, 255);
+    border-left: 1px solid rgb(255, 255, 255);
+
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1400px){
+    .info{
+        height: fit-content;
+    }
+
+    .skills-gap{
+        margin-top: -90px;
+    }
+
+    ul{
+        padding: 0;
+    }
+
+    li{
+        font-size: 15px;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        margin-left: 15px;
+    
+    }
+
+    h2{
+        font-size: 1.2rem;
+    }
+
+    h6{
+        text-align: center;
+        font-size: 15px;
+        font-weight: 900;
+    }
+
+    p{
+        font-size: 15px;
+    }
+    h1{
+        font-size: 3.5rem;
+        margin-top: 40px;
+    }
+
+    .image{
+        height: 150px;
+    }
+
+  
+
+
+}
+
+@media (max-width: 450px){
+    .info{
+        height: fit-content;
+    }
+
+    .skills-gap{
+        margin-top: -90px;
+    }
+
+    ul{
+        padding: 0;
+    }
+
+    li{
+        font-size: 10px;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        margin-left: 10px;
+    
+    }
+
+    h2{
+        font-size: 0.8rem;
+    }
+
+    h6{
+        text-align: center;
+        font-size: 10px;
+        font-weight: 900;
+    }
+
+    p{
+        font-size: 10px;
+    }
+    h1{
+        font-size: 2.2rem;
+        margin-top: 40px;
+    }
+
+    .image{
+        height: 120px;
+    }
+
+    button{
+        height: 30px;
+       
+    }
+  
+    .buttons-cert button{
+        padding: 5px;
+        font-size: 10px;
+    }
+    
+}
+
+/* Certifications border*/
+
+
+
+.outer-cert{
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 0;
+    margin: 0;
+
+    border-right: 1px solid rgb(148, 148, 148);
+    border-bottom: 1px solid rgb(124, 124, 124);
+    border-top: 1px solid rgb(255, 255, 255);
+    border-left: 1px solid rgb(255, 255, 255);
+
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.inner-cert{
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  
+    border-right: 1px solid rgb(148, 148, 148);
+    border-bottom: 1px solid rgb(124, 124, 124);
+    border-top: 1px solid rgb(255, 255, 255);
+    border-left: 1px solid rgb(255, 255, 255);
+
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.buttons-cert{
+    padding: 20px;
+    
+
+}
+
+.btn-outline-dark{
+    font-size: 1.1rem;
+    box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgb(148, 148, 148);
+    border-bottom: 1px solid rgb(124, 124, 124);
+    border-top: 1px solid rgb(255, 255, 255);
+    border-left: 1px solid rgb(255, 255, 255);
+
+}
+
+/* Contact-Details */
+.contact-container{
+    padding: 20px;
+}
+
+.contact-inner-cert{
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  
+    border-right: 1px solid rgb(148, 148, 148);
+    border-bottom: 1px solid rgb(124, 124, 124);
+    border-top: 1px solid rgb(255, 255, 255);
+    border-left: 1px solid rgb(255, 255, 255);
+
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact{
+ padding: 20px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 1.1rem;
+}
+
+
+@media (max-width: 1400px) {
+    
+
+.contact-container > div > .phone{
+    margin-top: 20px;
+}
+}
+.footer{
+    color: rgb(88, 82, 75);
+}
